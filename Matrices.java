@@ -81,6 +81,65 @@ public class Matrices{
             System.out.println();
         }
 
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
+        System.out.println("EJER 4");
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
+
+        //Imprimir la diagonal principal de una matriz 3x3.
+
+        int[][] mCuatro = new int[3][3];
+        int co = 1;
+        for(int i = 0; i < mCuatro.length; i++){
+            for(int j = 0; j < mCuatro[i].length; j++){
+                if (i == 0 && j == 0) {
+                    mCuatro[i][j] = co;
+                    co++;
+                }else if(i - j == 0){
+                    mCuatro[i][j] = co;
+                    co++;
+                }else{
+                    mCuatro[i][j] = 0;
+                }
+
+                System.out.print(mCuatro[i][j] + " ");
+            }
+            System.out.println();
+        }
+
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
+        System.out.println("EJER 5");
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
+
+        //Imprimir la diagonal secundaria de una matriz 3x3.
+    /*
+        [0, 0, 3]  
+        [0, 2, 0]  
+        [1, 0, 0]     
+    */
+        int[][] mCinco = new int[3][3];
+        int cou = 1;
+
+        
+        for(int i = 0; i < mCinco.length; i++){
+            for(int j = 0; j < mCinco[i].length; j++){
+                if(i == mCinco.length - j - 1){
+                    mCinco[i][j] = mCinco.length - i;
+                }
+            
+                System.out.print(mCinco[i][j] + " ");
+            }
+            System.out.println();
+        }
+
+
 
 
     }
